@@ -18,10 +18,10 @@ extension Array {
 
 ```swift
 extension Array {
-    func myFilter(_ rule: (Element) -> Bool) -> [Element] {
+    func myFilter(_ transform: (Element) -> Bool) -> [Element] {
         var result: [Element] = []
 
-        for item in self where rule(item) {
+        for item in self where transform(item) {
             result.append(item)
         }
 
@@ -32,11 +32,11 @@ extension Array {
 
 ```swift
 extension Array {
-    func myReduce<T>(_ initialValue: T, _ rule: (T, Element) -> T) -> T {
+    func myReduce<T>(_ initialValue: T, _ transform: (T, Element) -> T) -> T {
         var result: T = initialValue
 
         for item in self {
-            result = rule(result, item)
+            result = transform(result, item)
         }
 
         return result
