@@ -72,3 +72,8 @@ func fiboIterator() -> AnyIterator<Int> {
 
 let fib = AnySequence(fiboIterator)
 Array(fib.prefix(10))
+
+
+// Why we need to seperate sequence from iterator ?
+// we need to maintain the state for sequence outside the sequence itself, so the state is not shared.
+// that's why we need to keep track of state in different object, so we have iterator.
