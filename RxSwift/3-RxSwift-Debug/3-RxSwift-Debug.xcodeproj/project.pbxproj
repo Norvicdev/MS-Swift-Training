@@ -25,6 +25,7 @@
 		D6FE13ED207733D8004B7025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6FE13F0207733D8004B7025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6FE13F2207733D8004B7025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6FE13F8207735B3004B7025 /* Debug.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Debug.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D89DD72A3656F95DC1552704 /* Pods-3-RxSwift-Debug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-3-RxSwift-Debug.release.xcconfig"; path = "Pods/Target Support Files/Pods-3-RxSwift-Debug/Pods-3-RxSwift-Debug.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +79,7 @@
 		D6FE13E5207733D8004B7025 /* 3-RxSwift-Debug */ = {
 			isa = PBXGroup;
 			children = (
+				D6FE13F8207735B3004B7025 /* Debug.playground */,
 				D6FE13E6207733D8004B7025 /* AppDelegate.swift */,
 				D6FE13E8207733D8004B7025 /* ViewController.swift */,
 				D6FE13EA207733D8004B7025 /* Main.storyboard */,
