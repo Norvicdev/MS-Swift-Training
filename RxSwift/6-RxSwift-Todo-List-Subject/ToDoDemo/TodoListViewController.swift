@@ -47,13 +47,20 @@ class TodoListViewController: UIViewController {
         
         if segue.identifier == "AddTodo" {
             currController.title = "Add Todo"
-            currController.todo.subscribe(onNext: { [weak self] newTodo in
+            _ = currController.todo.subscribe(onNext: { [weak self] newTodo in
                 self?.todoItems.value.append(newTodo)
             }).addDisposableTo(bag)
         }
         else if segue.identifier == "EditTodo" {
             currController.title = "Edit todo"
-            
+
+            if let indexPath = tableView.indexPath(for: sender as! UITableViewCell) {
+                currController.todoItem = todoItems.value[indexPath.row]
+
+                _ = currController.todo.subscribe(onNext: { [weak self] newTodo in
+                    self?.todoItems.value[indexPath.row] = newTodo
+                }).addDisposableTo(bag)
+            }
         }
     }
 

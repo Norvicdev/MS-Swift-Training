@@ -23,7 +23,10 @@ class TodoDetailViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
+        todoName.text = todoItem.name
+        isFinished.isOn = todoItem.isFinished
+
         todoName.becomeFirstResponder()
     }
     
