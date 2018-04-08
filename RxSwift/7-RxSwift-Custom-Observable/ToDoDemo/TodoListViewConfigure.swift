@@ -60,35 +60,42 @@ extension TodoListViewController {
         return nil
     }
     
-    func syncTodoToCloud() {
-        guard let cloudUrl = ubiquityURL("Documents/TodoList.plist") else {
-            self.flash(title: "Failed",
-                    message: "You should enabled iCloud in Settings first.")
+    func syncTodoToCloud() -> Observable<URL> {
 
-            return
+        guard let cloudUrl = ubiquityURL("Documents/TodoList.plist") else {
+            return Observable.create { observer in
+                observer.onError(SaveTodoError.iCloudIsNotEnabled)
+
+                return Disposables.create()
+            }
         }
 
         guard let localData = NSData(contentsOf: dataFilePath()) else {
-            self.flash(title: "Failed",
-                    message: "Cannot read local file.")
+            return Observable.create { observer in
+                observer.onError(SaveTodoError.cannotReadLocalFile)
 
-            return
+                return Disposables.create()
+            }
         }
 
-        let plist = PlistDocument(fileURL: cloudUrl, data: localData)
+        return Observable.create { observer in
+            let plist = PlistDocument(fileURL: cloudUrl, data: localData)
 
-        plist.save(to: cloudUrl, for: .forOverwriting, completionHandler: {
-            (success: Bool) -> Void in
-            print(cloudUrl)
+            plist.save(to: cloudUrl, for: .forOverwriting, completionHandler: {
+                (success: Bool) -> Void in
+                debugPrint(cloudUrl)
 
-            if success {
-                self.flash(title: "Success",
-                        message: "All todos are synced to cloud.")
-            } else {
-                self.flash(title: "Failed",
-                        message: "Sync todos to cloud failed")
-            }
-        })
+                if success {
+                    observer.onNext(cloudUrl)
+                    observer.onCompleted()
+                } else {
+                    observer.onError(SaveTodoError.cannotCreateFileOnCloud)
+                }
+            })
+
+            return Disposables.create()
+        }
+
     }
     
     func saveTodoItems() -> Observable<Void> {

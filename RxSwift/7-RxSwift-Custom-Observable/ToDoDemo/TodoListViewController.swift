@@ -88,8 +88,12 @@ class TodoListViewController: UIViewController {
     }
     
     @IBAction func syncToCloud(_ sender: Any) {
-        // Add sync code here
-        syncTodoToCloud()
+        _ = syncTodoToCloud().subscribe(onNext: { [weak self] url in
+            self?.flash(title: "success", message: "\(url)")
+            },
+            onError: { [weak self] error in
+            self?.flash(title: "error", message: error.localizedDescription)
+        })
         
     }
     
