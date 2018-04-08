@@ -34,6 +34,11 @@ class TodoListViewController: UIViewController {
     }
 
     func updateUI(todos: [TodoItem]) {
+        clearTodoBtn.isEnabled = !todos.isEmpty
+        addTodo.isEnabled =
+            todos.filter { !$0.isFinished }.count < 5
+        title = todos.isEmpty ? "Todo" : "\(todos.count) todos"
+
         tableView.reloadData()
     }
 

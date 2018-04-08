@@ -17,6 +17,9 @@ extension TodoListViewController: UITableViewDelegate {
             let todo = todoItems.value[indexPath.row]
             
             todo.toggleFinished()
+
+            // trigger event, todos is variable
+            todoItems.value[indexPath.row] = todo
             configureStatus(for: cell, with: todo)
         }
         
