@@ -6,7 +6,9 @@
 //  Copyright © 2018 Junliang Jiang. All rights reserved.
 //
 
+import RxSwift
 import UIKit
+
 
 let CELL_CHECKMARK_TAG = 1001
 let CELL_TODO_TITLE_TAG = 1002
@@ -89,14 +91,22 @@ extension TodoListViewController {
         })
     }
     
-    func saveTodoItems() {
-        let data = NSMutableData()
-        let archiver = NSKeyedArchiver(forWritingWith: data)
-        
-        archiver.encode(todoItems.value, forKey: "TodoItems")
-        archiver.finishEncoding()
-        
-        data.write(to: dataFilePath(), atomically: true)
+    func saveTodoItems() -> Observable<Void> {
+        return Observable.create { [weak self] observer in
+            let data = NSMutableData()
+            let archiver = NSKeyedArchiver(forWritingWith: data)
+
+            archiver.encode(self?.todoItems.value, forKey: "TodoItems")
+            archiver.finishEncoding()
+
+            if data.write(to: (self?.dataFilePath())!, atomically: true) {
+                observer.onCompleted()
+            } else {
+                observer.onError(SaveTodoError.cannotSaveToLocalFile)
+            }
+
+            return Disposables.create()
+        }
     }
     
     func loadTodoItems() {

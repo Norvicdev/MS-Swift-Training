@@ -94,8 +94,12 @@ class TodoListViewController: UIViewController {
     }
     
     @IBAction func saveTodoList(_ sender: Any) {
-        saveTodoItems()
-        flash(title: "Success", message: "All Todos are saved on your phone.")
+        _ = saveTodoItems().subscribe(onError: { [weak self] error in
+            self?.flash(title: "error", message: error.localizedDescription)
+            },
+            onCompleted: { [weak self] in
+                self?.flash(title: "success", message: "all todos saved to your phone")
+        })
     }
     
     @IBAction func clearTodoList(_ sender: Any) {
