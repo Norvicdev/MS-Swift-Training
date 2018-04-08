@@ -11,14 +11,14 @@ import RxSwift
 
 
 class TodoListViewController: UIViewController {
-    var todoItems: [TodoItem] = []
+    var todoItems = Variable<[TodoItem]>([])
+    let bag = DisposeBag()
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var clearTodoBtn: UIButton!
     @IBOutlet weak var addTodo: UIBarButtonItem!
     
     required init?(coder aDecoder: NSCoder) {
-        todoItems = [TodoItem]()
-        
         super.init(coder: aDecoder)
         loadTodoItems()
     }
@@ -27,22 +27,19 @@ class TodoListViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
+
+        todoItems.asObservable().subscribe(onNext: {
+            [weak self] todos in self?.updateUI(todos: todos)
+        }).addDisposableTo(bag)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateUI(todos: [TodoItem]) {
+        tableView.reloadData()
     }
-    
+
     @IBAction func addTodoItem(_ sender: Any) {
-        let newRowIndex = todoItems.count
-        
         let todoItem = TodoItem(name: "Todo Demo", isFinished: false)
-        todoItems.append(todoItem)
-        
-        let indexPath = IndexPath(row: newRowIndex, section: 0)
-        
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        todoItems.value.append(todoItem)
     }
     
     @IBAction func saveTodoList(_ sender: Any) {
@@ -50,8 +47,6 @@ class TodoListViewController: UIViewController {
     }
     
     @IBAction func clearTodoList(_ sender: Any) {
-        todoItems = [TodoItem]()
-        
-        tableView.reloadData()
+        todoItems.value.removeAll()
     }
 }
