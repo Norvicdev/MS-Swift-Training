@@ -6,9 +6,17 @@
 //  Copyright © 2018 Junliang Jiang. All rights reserved.
 //
 
+import RxSwift
 import UIKit
 
+
 class TodoDetailViewController: UITableViewController {
+    fileprivate let todoSubject = PublishSubject<TodoItem>()
+    var todo: Observable<TodoItem> {
+        return todoSubject.asObserver()
+    }
+    var todoItem: TodoItem = TodoItem()
+
     @IBOutlet weak var todoName: UITextField!
     @IBOutlet weak var isFinished: UISwitch!
     @IBOutlet weak var doneBarBtn: UIBarButtonItem!
@@ -24,6 +32,11 @@ class TodoDetailViewController: UITableViewController {
     }
     
     @IBAction func done() {
+        todoItem.name = todoName.text ?? ""
+        todoItem.isFinished = isFinished.isOn
+        todoSubject.onNext(todoItem)
+        todoSubject.onCompleted()
+        
         dismiss(animated: true, completion: nil)
     }
 }

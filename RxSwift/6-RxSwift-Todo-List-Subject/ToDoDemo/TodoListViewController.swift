@@ -47,6 +47,9 @@ class TodoListViewController: UIViewController {
         
         if segue.identifier == "AddTodo" {
             currController.title = "Add Todo"
+            currController.todo.subscribe(onNext: { [weak self] newTodo in
+                self?.todoItems.value.append(newTodo)
+            }).addDisposableTo(bag)
         }
         else if segue.identifier == "EditTodo" {
             currController.title = "Edit todo"
