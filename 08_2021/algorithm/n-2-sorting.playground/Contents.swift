@@ -5,3 +5,9 @@ example(of: "bubble sort") {
   print("Bubble sorted: \(array)")
 }
 
+example(of: "selection sort") {
+  var array = [9, 4, 10, 3, 2, 18, 25, -2, 1]
+  print("Original: \(array)")
+  selectionSort(&array)
+  print("Selection sorted: \(array)")
+}
