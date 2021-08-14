@@ -1,7 +1,15 @@
 import Foundation
 import RxSwift
 
+example(of: "creating observables") {
+  let a: Observable<String> = Observable<String>.just("ok")
+  a.subscribe { debugPrint($0) }
+}
 
+example(of: "observerable factories") {
+  let a: Observable<String> = Observable<String>.just("ok")
+  a.subscribe { debugPrint($0) }
+}
 
 /// Copyright (c) 2020 Razeware LLC
 ///
