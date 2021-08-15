@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B507D1926C94A70009DDBCF /* TwoSum.swift */; };
 		1BCDDB5526C7E958007C744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5426C7E958007C744C /* AppDelegate.swift */; };
 		1BCDDB5726C7E958007C744C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5626C7E958007C744C /* SceneDelegate.swift */; };
 		1BCDDB5926C7E958007C744C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5826C7E958007C744C /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B507D1926C94A70009DDBCF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		1BCDDB5126C7E958007C744C /* Sort_It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sort_It.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCDDB5426C7E958007C744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCDDB5626C7E958007C744C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				1BCDDB6226C7E959007C744C /* Info.plist */,
 				1BCDDB6926C7E971007C744C /* MergeSort.swift */,
 				1BCDDB6C26C7F022007C744C /* QuickSort.swift */,
+				1B507D1926C94A70009DDBCF /* TwoSum.swift */,
 			);
 			path = Sort_It;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			files = (
 				1BCDDB5926C7E958007C744C /* ViewController.swift in Sources */,
 				1BCDDB6D26C7F022007C744C /* QuickSort.swift in Sources */,
+				1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */,
 				1BCDDB5526C7E958007C744C /* AppDelegate.swift in Sources */,
 				1BCDDB6A26C7E971007C744C /* MergeSort.swift in Sources */,
 				1BCDDB5726C7E958007C744C /* SceneDelegate.swift in Sources */,
