@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B507D1926C94A70009DDBCF /* TwoSum.swift */; };
+		1BAF3DB826CBF48900D0F384 /* ThreeLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */; };
 		1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */; };
 		1BCDDB5526C7E958007C744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5426C7E958007C744C /* AppDelegate.swift */; };
 		1BCDDB5726C7E958007C744C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5626C7E958007C744C /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1B507D1926C94A70009DDBCF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
+		1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLargestNumber.swift; sourceTree = "<group>"; };
 		1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidSubsequence.swift; sourceTree = "<group>"; };
 		1BCDDB5126C7E958007C744C /* Sort_It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sort_It.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCDDB5426C7E958007C744C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				1BCDDB6C26C7F022007C744C /* QuickSort.swift */,
 				1B507D1926C94A70009DDBCF /* TwoSum.swift */,
 				1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */,
+				1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */,
 			);
 			path = Sort_It;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 				1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */,
 				1BCDDB5526C7E958007C744C /* AppDelegate.swift in Sources */,
 				1BCDDB6A26C7E971007C744C /* MergeSort.swift in Sources */,
+				1BAF3DB826CBF48900D0F384 /* ThreeLargestNumber.swift in Sources */,
 				1BCDDB5726C7E958007C744C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
