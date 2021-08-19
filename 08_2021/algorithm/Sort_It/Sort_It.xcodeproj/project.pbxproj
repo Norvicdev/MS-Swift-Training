@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2B7FDF26CE5891009EBF25 /* ShiftLetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2B7FDE26CE5891009EBF25 /* ShiftLetters.swift */; };
 		1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B507D1926C94A70009DDBCF /* TwoSum.swift */; };
 		1BAF3DB826CBF48900D0F384 /* ThreeLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */; };
 		1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B2B7FDE26CE5891009EBF25 /* ShiftLetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftLetters.swift; sourceTree = "<group>"; };
 		1B507D1926C94A70009DDBCF /* TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSum.swift; sourceTree = "<group>"; };
 		1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLargestNumber.swift; sourceTree = "<group>"; };
 		1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidSubsequence.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				1B507D1926C94A70009DDBCF /* TwoSum.swift */,
 				1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */,
 				1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */,
+				1B2B7FDE26CE5891009EBF25 /* ShiftLetters.swift */,
 			);
 			path = Sort_It;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				1BCDDB5926C7E958007C744C /* ViewController.swift in Sources */,
 				1BCDDB6D26C7F022007C744C /* QuickSort.swift in Sources */,
+				1B2B7FDF26CE5891009EBF25 /* ShiftLetters.swift in Sources */,
 				1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */,
 				1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */,
 				1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */,
