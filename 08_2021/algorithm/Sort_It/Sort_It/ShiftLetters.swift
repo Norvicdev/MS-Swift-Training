@@ -10,6 +10,8 @@ import Foundation
 // https://leetcode.com/problems/shifting-letters/
 public func shiftLetters(_ s: String, _ shifts: [Int]) -> String {
 
+  // Input: c = "a", shifts = 3
+  // Output: "d"
   func shiftCharacter(_ c: Character, _ shift: Int) -> Character {
     let alphabet = Array("abcdefghijklmnopqrstuvwxyz")
     let length = alphabet.count
@@ -18,24 +20,26 @@ public func shiftLetters(_ s: String, _ shifts: [Int]) -> String {
     return alphabet[code % length]
   }
 
-  func shiftCharacters(_ s: String, shift: Int, number: Int) -> String {
+  // Input: s = "abc", shifts = 3, number = 1
+  // Output: "dbc"
+  func shiftCharacters(_ s: String, _ shift: Int, _ number: Int) -> String {
     var result = [Character]()
 
-    for (index, char) in s.enumerated() {
+    for (index, char) in Array(s).enumerated() {
       if index < number {
-        result.append(shiftCharacter(Character(extendedGraphemeClusterLiteral: char), shift))
+        result.append(shiftCharacter(char, shift))
       } else {
-        result.append(Character(extendedGraphemeClusterLiteral: char))
+        result.append(char)
       }
     }
 
     return String(result)
   }
 
-  let strArray = Array(s)
+  var result = s
   for i in 0..<shifts.count {
-    
+    result = shiftCharacters(result, shifts[i], i + 1)
   }
 
-  return ""
+  return result
 }
