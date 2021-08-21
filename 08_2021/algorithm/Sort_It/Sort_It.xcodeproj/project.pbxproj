@@ -57,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8192AD26D0E88B000A2861 /* NSum */ = {
+			isa = PBXGroup;
+			children = (
+				1B507D1926C94A70009DDBCF /* TwoSum.swift */,
+			);
+			path = NSum;
+			sourceTree = "<group>";
+		};
 		1B83DA6426CFF328004839F0 /* Subset */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +93,7 @@
 		1BCDDB5326C7E958007C744C /* Sort_It */ = {
 			isa = PBXGroup;
 			children = (
+				1B8192AD26D0E88B000A2861 /* NSum */,
 				1B83DA6426CFF328004839F0 /* Subset */,
 				1BCDDB5426C7E958007C744C /* AppDelegate.swift */,
 				1BCDDB5626C7E958007C744C /* SceneDelegate.swift */,
@@ -96,7 +105,6 @@
 				1BCDDB6926C7E971007C744C /* MergeSort.swift */,
 				1BCDDB6C26C7F022007C744C /* QuickSort.swift */,
 				1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */,
-				1B507D1926C94A70009DDBCF /* TwoSum.swift */,
 				1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */,
 				1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */,
 				1B2B7FDE26CE5891009EBF25 /* ShiftLetters.swift */,
