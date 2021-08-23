@@ -9,7 +9,7 @@ import Foundation
 
 extension Solution {
   // root, left, right
-  func preOrderTraversal(root: BinaryNode<Int>) -> [Int] {
+  func preOrderTraversalV1(root: BinaryNode<Int>) -> [Int] {
     // put preorder traversal into result, starting at root
     func traverse(root: BinaryNode<Int>?,  result: inout [Int]) {
       guard let _root = root else { return }
@@ -21,6 +21,26 @@ extension Solution {
 
     var result = [Int]()
     traverse(root: root, result: &result)
+    return result
+  }
+
+  func preOrderTraversalV2(root: BinaryNode<Int>?) -> [Int] {
+    var stack = Stack<BinaryNode<Int>>()
+    var result = [Int]()
+    guard let _root = root else { return result }
+
+    stack.push(_root)
+    while !stack.isEmpty {
+      let node = stack.pop()
+      result.append(node!.value)
+      if node?.rightChild != nil {
+        stack.push(node!.rightChild!)
+      }
+      if node?.leftChild != nil {
+        stack.push(node!.leftChild!)
+      }
+    }
+
     return result
   }
 }
