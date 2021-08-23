@@ -43,4 +43,18 @@ extension Solution {
 
     return result
   }
+
+  func preOrderTraversalV3(root: BinaryNode<Int>?) -> [Int] {
+    var result = [Int]()
+    guard let _root = root else { return result }
+
+    let left = preOrderTraversalV3(root: _root.leftChild)
+    let right = preOrderTraversalV3(root: _root.rightChild)
+
+    result.append(_root.value)
+    result.append(contentsOf: left)
+    result.append(contentsOf: right)
+
+    return result
+  }
 }
