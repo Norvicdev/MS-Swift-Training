@@ -29,6 +29,7 @@
 		1BCDDB6D26C7F022007C744C /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB6C26C7F022007C744C /* QuickSort.swift */; };
 		1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */; };
 		1BD6851826D51D08007B5B7B /* BTMaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851726D51D08007B5B7B /* BTMaxDepth.swift */; };
+		1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		1BCDDB6C26C7F022007C744C /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
 		1BD6851726D51D08007B5B7B /* BTMaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxDepth.swift; sourceTree = "<group>"; };
+		1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBalancedTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				1BC0BE6626D3CF77002115C1 /* BTPreorderTraversal.swift */,
 				1BC0BE6C26D3D047002115C1 /* BinaryTree.swift */,
 				1BD6851726D51D08007B5B7B /* BTMaxDepth.swift */,
+				1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				1BCDDB6D26C7F022007C744C /* QuickSort.swift in Sources */,
 				1BC0BE6726D3CF77002115C1 /* BTPreorderTraversal.swift in Sources */,
 				1B2B7FDF26CE5891009EBF25 /* ShiftLetters.swift in Sources */,
+				1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */,
 				1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */,
 				1B83DA6226CFF305004839F0 /* Solution.swift in Sources */,
 				1B8192AF26D0E8DA000A2861 /* ThreeSum.swift in Sources */,
