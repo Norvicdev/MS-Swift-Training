@@ -44,9 +44,11 @@ extension Solution {
     }
 
     if j < b.count {
-      result.append(contentsOf: a[j...])
+      result.append(contentsOf: b[j...])
     }
 
+    debugPrint("a is \(a), b is \(b)")
+    debugPrint("result is \(result)")
     return result
   }
 }

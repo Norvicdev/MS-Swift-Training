@@ -39,11 +39,43 @@ final class MergeSortTests: XCTestCase {
                    message: "two arrays")
   }
 
+  func test4Point1() {
+    self.helperOne(expected: [-100, 1, 1000],
+                   a: [-100],
+                   b: [1, 1000],
+                   message: "two arrays")
+  }
+
+  func test5() {
+    self.helperTwo(expected: [-100, 0, 1, 2, 100, 1000],
+                   a: [-100, 1000, 1, 0, 100, 2],
+                   message: "random")
+  }
+
+  func test6() {
+    self.helperTwo(expected: [],
+                   a: [],
+                   message: "empty")
+  }
+
+  func test7() {
+    self.helperTwo(expected: [-555, -222, 222, 444, 1213],
+                   a: [1213, 444, 222, -222, -555],
+                   message: "reverse")
+  }
+
   private func helperOne(expected: [Int],
                       a: [Int],
                       b: [Int],
                       message: String) {
     let result = solution.mergeTwoSortedArray(a, b)
+    XCTAssertEqual(result, expected, message)
+  }
+
+  private func helperTwo(expected: [Int],
+                         a: [Int],
+                         message: String) {
+    let result = solution.mergeSort(a)
     XCTAssertEqual(result, expected, message)
   }
 }
