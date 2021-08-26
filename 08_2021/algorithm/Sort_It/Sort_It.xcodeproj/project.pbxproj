@@ -32,6 +32,7 @@
 		1BCDDB6A26C7E971007C744C /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB6926C7E971007C744C /* MergeSort.swift */; };
 		1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */; };
 		1BD3F92726D7B37400869C6F /* BTMaxPathSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3F92626D7B37400869C6F /* BTMaxPathSum.swift */; };
+		1BD3F92C26D7B54C00869C6F /* BTMaxPathSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3F92B26D7B54C00869C6F /* BTMaxPathSumTests.swift */; };
 		1BD6851826D51D08007B5B7B /* BTMaxDepth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851726D51D08007B5B7B /* BTMaxDepth.swift */; };
 		1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */; };
 		1BDC65BE26D6732700018F2A /* MergeSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65BD26D6732700018F2A /* MergeSorting.swift */; };
@@ -78,6 +79,7 @@
 		1BCDDB6926C7E971007C744C /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
 		1BD3F92626D7B37400869C6F /* BTMaxPathSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxPathSum.swift; sourceTree = "<group>"; };
+		1BD3F92B26D7B54C00869C6F /* BTMaxPathSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxPathSumTests.swift; sourceTree = "<group>"; };
 		1BD6851726D51D08007B5B7B /* BTMaxDepth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxDepth.swift; sourceTree = "<group>"; };
 		1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBalancedTree.swift; sourceTree = "<group>"; };
 		1BDC65BD26D6732700018F2A /* MergeSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSorting.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		1BD3F92A26D7B52400869C6F /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
+				1BD3F92B26D7B54C00869C6F /* BTMaxPathSumTests.swift */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */,
 				1B8192C226D0EBB9000A2861 /* ThreeSumTests.swift in Sources */,
+				1BD3F92C26D7B54C00869C6F /* BTMaxPathSumTests.swift in Sources */,
 				1BB2C48E26D75A54000A0E3C /* PartitionArrayNumberKTests.swift in Sources */,
 				1BB2C48426D73D3A000A0E3C /* QuickSortTests.swift in Sources */,
 			);
