@@ -11,11 +11,21 @@ import Foundation
 // the path may start and end at any node in the tree
 extension Solution {
   func BTMaxPathSum(_ root: BinaryNode<Int>?) -> Int {
-    guard let _root = root else { return 0 }
+    func helper(_ root: BinaryNode<Int>?) -> (singlePath: Int, maxPath: Int) {
+      guard let _root = root else { return (0, Int.min) }
 
-    let left = BTMaxPathSum(_root.leftChild)
-    let right = BTMaxPathSum(_root.rightChild)
+      let left = helper(_root.leftChild)
+      let right = helper(_root.rightChild)
 
-    return max(left + _root.value, right + _root.value)
+      var singlePath = max(left.singlePath, right.singlePath) + _root.value
+      singlePath = max(singlePath, 0)
+
+      var maxPath = max(left.maxPath, right.maxPath)
+      maxPath = max(maxPath, left.singlePath + right.singlePath + _root.value)
+
+      return (singlePath, maxPath)
+    }
+
+    return helper(root).maxPath
   }
 }

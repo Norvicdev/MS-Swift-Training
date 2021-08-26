@@ -29,7 +29,8 @@ final class BTMaxPathSumTests: XCTestCase {
   }()
 
   func test1() {
-    self.helperOne(expected: 24, message: "one")
+    debugPrint(tree1)
+    self.helperOne(expected: 30, message: "one")
   }
 
   private func helperOne(expected: Int,
