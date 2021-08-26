@@ -21,11 +21,11 @@ extension Solution {
     var leftIdx = 0
     var rightIdx = array.count - 1
 
-    while leftIdx < rightIdx {
+    while leftIdx <= rightIdx {
       while array[leftIdx] < num { leftIdx += 1 }
-      while array[rightIdx] > num { rightIdx -= 1 }
+      while array[rightIdx] >= num { rightIdx -= 1 }
 
-      if leftIdx < rightIdx {
+      if leftIdx <= rightIdx {
         array.swapAt(leftIdx, rightIdx)
       }
     }
