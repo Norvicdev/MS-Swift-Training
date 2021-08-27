@@ -2,7 +2,7 @@
 
 ```swift
 
-func recursion(leve, param1, param2...)
+func recursion(level, param1, param2...)
   // recursion terminator
   if level > MAX_LEVEL
     process_result
