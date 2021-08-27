@@ -37,6 +37,7 @@
 		1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */; };
 		1BDC65BE26D6732700018F2A /* MergeSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65BD26D6732700018F2A /* MergeSorting.swift */; };
 		1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65C226D676E700018F2A /* MergeSortTests.swift */; };
+		1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		1BDC65BD26D6732700018F2A /* MergeSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSorting.swift; sourceTree = "<group>"; };
 		1BDC65C226D676E700018F2A /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
 		1BF4666E26D86DA400FE8E28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateParentheses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				1B13310726D7CD5500ECB588 /* README.md */,
+				1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */,
 				1B83DA6226CFF305004839F0 /* Solution.swift in Sources */,
 				1B8192AF26D0E8DA000A2861 /* ThreeSum.swift in Sources */,
+				1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */,
 				1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */,
 				1B83DA6626CFF43A004839F0 /* SubsetOne.swift in Sources */,
 				1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */,
