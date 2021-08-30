@@ -15,6 +15,10 @@ extension Solution {
     let left = minDepth(_root.leftChild)
     let right = minDepth(_root.rightChild)
 
-    return min(left, right) + 1
+    if (left == 0 || right == 0) {
+      return max(left, right) + 1
+    } else {
+      return min(left, right) + 1
+    }
   }
 }
