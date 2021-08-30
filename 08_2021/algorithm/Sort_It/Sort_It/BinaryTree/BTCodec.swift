@@ -13,10 +13,11 @@ extension Solution {
 
     func preorder(_ root: BinaryNode<Int>?) {
       guard let _root = root else { result += "None,"; return }
-      result += "\(_root.value)"
+      result += "\(_root.value),"
       preorder(_root.leftChild)
       preorder(_root.rightChild)
     }
+    preorder(root)
 
     return result
   }
