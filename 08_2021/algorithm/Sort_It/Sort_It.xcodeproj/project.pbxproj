@@ -143,7 +143,6 @@
 				1B13310726D7CD5500ECB588 /* README.md */,
 				1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */,
 				1B217F8426D9C33A00DA811A /* ClimbStairs.swift */,
-				1BC7C99726DEFD570052DA29 /* Combinations.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -222,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				1BC7C99F26DF0A160052DA29 /* README.md */,
+				1BC7C99726DEFD570052DA29 /* Combinations.swift */,
 			);
 			path = Combination;
 			sourceTree = "<group>";
