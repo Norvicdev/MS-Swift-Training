@@ -12,8 +12,24 @@ import Foundation
 extension Solution {
   func combine(_ n: Int, _ k: Int) -> [[Int]] {
     var result = [[Int]]()
+    var temp = [Int]()
 
+    func helper(_ cur: Int) {
+      if temp.count == k {
+        result.append(temp)
+      }
 
+      if cur == n + 1 {
+        return
+      }
+
+      temp.append(cur)
+      helper(cur + 1)
+      temp.removeLast()
+      helper(cur + 1)
+    }
+
+    helper(1)
 
     return result
   }
