@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B11D82A26E4D54500150F6B /* CombinationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B11D82926E4D54500150F6B /* CombinationsTests.swift */; };
 		1B217F8526D9C33A00DA811A /* ClimbStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B217F8426D9C33A00DA811A /* ClimbStairs.swift */; };
 		1B217F8A26D9C62700DA811A /* ClimbStairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B217F8926D9C62700DA811A /* ClimbStairsTests.swift */; };
 		1B217F9026D9CA2B00DA811A /* InvertBinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B217F8F26D9CA2B00DA811A /* InvertBinaryTree.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B11D82926E4D54500150F6B /* CombinationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinationsTests.swift; sourceTree = "<group>"; };
 		1B13310726D7CD5500ECB588 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1B217F8426D9C33A00DA811A /* ClimbStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbStairs.swift; sourceTree = "<group>"; };
 		1B217F8926D9C62700DA811A /* ClimbStairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbStairsTests.swift; sourceTree = "<group>"; };
@@ -129,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B11D82826E4D52900150F6B /* Combinations */ = {
+			isa = PBXGroup;
+			children = (
+				1B11D82926E4D54500150F6B /* CombinationsTests.swift */,
+			);
+			path = Combinations;
+			sourceTree = "<group>";
+		};
 		1B13310526D7CC2400ECB588 /* Divide&Conquer */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +177,7 @@
 		1B8192B626D0EB8D000A2861 /* Sort_It_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1B11D82826E4D52900150F6B /* Combinations */,
 				1B217F8826D9C57E00DA811A /* Recursion */,
 				1BD3F92A26D7B52400869C6F /* BinaryTree */,
 				1BDC65C126D676D200018F2A /* Sort */,
@@ -406,6 +417,7 @@
 				1B43104726DC883D0059281B /* BTCodecTests.swift in Sources */,
 				1B217F9826D9D76000DA811A /* ValidBSTTests.swift in Sources */,
 				1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */,
+				1B11D82A26E4D54500150F6B /* CombinationsTests.swift in Sources */,
 				1B43103F26DC70B80059281B /* BTMinDepthTests.swift in Sources */,
 				1B8192C226D0EBB9000A2861 /* ThreeSumTests.swift in Sources */,
 				1BD3F92C26D7B54C00869C6F /* BTMaxPathSumTests.swift in Sources */,

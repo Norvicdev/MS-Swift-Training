@@ -15,8 +15,13 @@ extension Solution {
     var temp = [Int]()
 
     func helper(_ cur: Int) {
+      if temp.count + (n - cur + 1) < k {
+        return
+      }
+
       if temp.count == k {
         result.append(temp)
+        return
       }
 
       if cur == n + 1 {
