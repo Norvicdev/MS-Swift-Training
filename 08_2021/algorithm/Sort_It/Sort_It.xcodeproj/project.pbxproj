@@ -49,6 +49,7 @@
 		1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */; };
 		1BDC65BE26D6732700018F2A /* MergeSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65BD26D6732700018F2A /* MergeSorting.swift */; };
 		1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65C226D676E700018F2A /* MergeSortTests.swift */; };
+		1BEF9F7326E627B70000F4CA /* PermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF9F7226E627B70000F4CA /* PermutationsTests.swift */; };
 		1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */; };
 /* End PBXBuildFile section */
 
@@ -111,6 +112,7 @@
 		1BD6851D26D51FAA007B5B7B /* BTBalancedTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTBalancedTree.swift; sourceTree = "<group>"; };
 		1BDC65BD26D6732700018F2A /* MergeSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSorting.swift; sourceTree = "<group>"; };
 		1BDC65C226D676E700018F2A /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
+		1BEF9F7226E627B70000F4CA /* PermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTests.swift; sourceTree = "<group>"; };
 		1BF4666E26D86DA400FE8E28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateParentheses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				1B11D82926E4D54500150F6B /* CombinationsTests.swift */,
+				1BEF9F7226E627B70000F4CA /* PermutationsTests.swift */,
 			);
 			path = Combinations;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */,
 				1B11D82A26E4D54500150F6B /* CombinationsTests.swift in Sources */,
 				1B43103F26DC70B80059281B /* BTMinDepthTests.swift in Sources */,
+				1BEF9F7326E627B70000F4CA /* PermutationsTests.swift in Sources */,
 				1B8192C226D0EBB9000A2861 /* ThreeSumTests.swift in Sources */,
 				1BD3F92C26D7B54C00869C6F /* BTMaxPathSumTests.swift in Sources */,
 				1BB2C48E26D75A54000A0E3C /* PartitionArrayNumberKTests.swift in Sources */,

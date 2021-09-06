@@ -15,21 +15,25 @@ extension Solution {
     var result = [[Int]]()
     var temp = [Int]()
 
-    func helper(_ cur: Int) {
-      if temp.count == nums.count {
-        result.append(temp)
+    func helper(_ depth: Int, _ path: inout [Int], _ used: inout [Bool]) {
+      if depth == nums.count {
+        result.append(path)
         return
       }
 
-      if cur == nums.count {
-        return
-      }
+      for (index, item) in nums.enumerated() {
+        if used[index] { continue }
 
-      temp.append(nums[cur])
-      helper(cur + 1)
-      temp.removeLast()
-      helper(cur + 1)
+        path.append(item)
+        used[index] = true
+        helper(depth + 1, &path, &used)
+        path.removeLast()
+        used[index] = false
+      }
     }
+
+    var used = Array.init(repeating: false, count: nums.count)
+    helper(0, &temp, &used)
 
     return result
   }
