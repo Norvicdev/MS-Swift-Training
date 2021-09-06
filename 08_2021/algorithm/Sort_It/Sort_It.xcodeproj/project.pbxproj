@@ -50,6 +50,7 @@
 		1BDC65BE26D6732700018F2A /* MergeSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65BD26D6732700018F2A /* MergeSorting.swift */; };
 		1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC65C226D676E700018F2A /* MergeSortTests.swift */; };
 		1BEF9F7326E627B70000F4CA /* PermutationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF9F7226E627B70000F4CA /* PermutationsTests.swift */; };
+		1BEF9F7726E6318C0000F4CA /* PermutationsTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF9F7626E6318C0000F4CA /* PermutationsTwo.swift */; };
 		1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +114,7 @@
 		1BDC65BD26D6732700018F2A /* MergeSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSorting.swift; sourceTree = "<group>"; };
 		1BDC65C226D676E700018F2A /* MergeSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortTests.swift; sourceTree = "<group>"; };
 		1BEF9F7226E627B70000F4CA /* PermutationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTests.swift; sourceTree = "<group>"; };
+		1BEF9F7626E6318C0000F4CA /* PermutationsTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationsTwo.swift; sourceTree = "<group>"; };
 		1BF4666E26D86DA400FE8E28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BF4666F26D8709C00FE8E28 /* GenerateParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateParentheses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +241,7 @@
 				1BC7C99F26DF0A160052DA29 /* README.md */,
 				1BC7C99726DEFD570052DA29 /* Combinations.swift */,
 				1BA481AB26E599EF00D82806 /* Permutations.swift */,
+				1BEF9F7626E6318C0000F4CA /* PermutationsTwo.swift */,
 			);
 			path = Combination;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				1B83DA6226CFF305004839F0 /* Solution.swift in Sources */,
 				1BA481AC26E599EF00D82806 /* Permutations.swift in Sources */,
 				1B43103B26DC6E330059281B /* BTMinDepth.swift in Sources */,
+				1BEF9F7726E6318C0000F4CA /* PermutationsTwo.swift in Sources */,
 				1B8192AF26D0E8DA000A2861 /* ThreeSum.swift in Sources */,
 				1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */,
 				1B43104326DC75500059281B /* BTCodec.swift in Sources */,
