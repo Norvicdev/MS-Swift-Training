@@ -15,7 +15,7 @@ extension Solution {
     var result = [[Int]]()
     var path = [Int]()
 
-    guard !result.isEmpty else { return result }
+    guard !nums.isEmpty else { return result }
 
     func helper(_ depth: Int, _ path: inout [Int], _ used: inout [Bool]) {
       if depth == nums.count {
