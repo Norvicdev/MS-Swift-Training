@@ -14,7 +14,7 @@ extension Solution {
   func permuteUnique(_ nums: [Int]) -> [[Int]] {
     var result = [[Int]]()
     var path = [Int]()
-
+    let nums = nums.sorted()
     guard !nums.isEmpty else { return result }
 
     func helper(_ depth: Int, _ path: inout [Int], _ used: inout [Bool]) {
