@@ -24,7 +24,7 @@ extension Solution {
       }
 
       for (index, item) in nums.enumerated() {
-        if (index >= 1 && nums[index] == nums[index - 1]) { continue }
+        if (index >= 1 && nums[index] == nums[index - 1] && !used[index - 1]) { continue }
         if used[index] { continue }
 
         path.append(item)
