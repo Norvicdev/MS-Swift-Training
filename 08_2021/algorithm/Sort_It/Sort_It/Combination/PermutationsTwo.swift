@@ -13,6 +13,30 @@ import Foundation
 extension Solution {
   func permuteUnique(_ nums: [Int]) -> [[Int]] {
     var result = [[Int]]()
+    var path = [Int]()
+
+    guard !result.isEmpty else { return result }
+
+    func helper(_ depth: Int, _ path: inout [Int], _ used: inout [Bool]) {
+      if depth == nums.count {
+        result.append(path)
+        return
+      }
+
+      for (index, item) in nums.enumerated() {
+        if (index >= 1 && nums[index] == nums[index - 1]) { continue }
+        if used[index] { continue }
+
+        path.append(item)
+        used[index] = true
+        helper(depth + 1, &path, &used)
+        path.removeLast()
+        used[index] = false
+      }
+    }
+
+    var used = Array.init(repeating: false, count: nums.count)
+    helper(0, &path, &used)
 
     return result
   }
