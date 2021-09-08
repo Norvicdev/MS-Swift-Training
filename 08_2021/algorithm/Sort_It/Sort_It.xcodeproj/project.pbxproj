@@ -36,6 +36,7 @@
 		1BC0BE6726D3CF77002115C1 /* BTPreorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0BE6626D3CF77002115C1 /* BTPreorderTraversal.swift */; };
 		1BC0BE6D26D3D047002115C1 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0BE6C26D3D047002115C1 /* BinaryTree.swift */; };
 		1BC0BE7226D3D505002115C1 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0BE7126D3D505002115C1 /* Stack.swift */; };
+		1BC0F8A026E843C9005C2913 /* NextPermutationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0F89F26E843C9005C2913 /* NextPermutationTests.swift */; };
 		1BC7C99826DEFD570052DA29 /* Combinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC7C99726DEFD570052DA29 /* Combinations.swift */; };
 		1BCDDB5526C7E958007C744C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5426C7E958007C744C /* AppDelegate.swift */; };
 		1BCDDB5726C7E958007C744C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5626C7E958007C744C /* SceneDelegate.swift */; };
@@ -99,6 +100,7 @@
 		1BC0BE6626D3CF77002115C1 /* BTPreorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTPreorderTraversal.swift; sourceTree = "<group>"; };
 		1BC0BE6C26D3D047002115C1 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		1BC0BE7126D3D505002115C1 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		1BC0F89F26E843C9005C2913 /* NextPermutationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextPermutationTests.swift; sourceTree = "<group>"; };
 		1BC7C99726DEFD570052DA29 /* Combinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinations.swift; sourceTree = "<group>"; };
 		1BC7C99F26DF0A160052DA29 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1BCDDB5126C7E958007C744C /* Sort_It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sort_It.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 		1B8192B626D0EB8D000A2861 /* Sort_It_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1BC0F89D26E8439D005C2913 /* Other */,
 				1B11D82826E4D52900150F6B /* Combinations */,
 				1B217F8826D9C57E00DA811A /* Recursion */,
 				1BD3F92A26D7B52400869C6F /* BinaryTree */,
@@ -240,6 +243,22 @@
 			path = Foundation;
 			sourceTree = "<group>";
 		};
+		1BC0F89D26E8439D005C2913 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1BC0F89F26E843C9005C2913 /* NextPermutationTests.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1BC0F89E26E843A3005C2913 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1B46CD2026E70AE7004E078B /* NextPermutation.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		1BC7C99E26DF0A000052DA29 /* Combination */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,7 +291,7 @@
 		1BCDDB5326C7E958007C744C /* Sort_It */ = {
 			isa = PBXGroup;
 			children = (
-				1B46CD2026E70AE7004E078B /* NextPermutation.swift */,
+				1BC0F89E26E843A3005C2913 /* Other */,
 				1BC7C99E26DF0A000052DA29 /* Combination */,
 				1B13310626D7CD3A00ECB588 /* Recursion */,
 				1B13310526D7CC2400ECB588 /* Divide&Conquer */,
@@ -434,6 +453,7 @@
 				1B217F9826D9D76000DA811A /* ValidBSTTests.swift in Sources */,
 				1BDC65C326D676E700018F2A /* MergeSortTests.swift in Sources */,
 				1B11D82A26E4D54500150F6B /* CombinationsTests.swift in Sources */,
+				1BC0F8A026E843C9005C2913 /* NextPermutationTests.swift in Sources */,
 				1B43103F26DC70B80059281B /* BTMinDepthTests.swift in Sources */,
 				1BEF9F7326E627B70000F4CA /* PermutationsTests.swift in Sources */,
 				1B8192C226D0EBB9000A2861 /* ThreeSumTests.swift in Sources */,
