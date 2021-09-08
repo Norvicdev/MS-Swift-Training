@@ -13,6 +13,20 @@ extension Solution {
   func nextPermutation(_ nums: inout [Int]) {
     guard !nums.isEmpty || nums.count > 1 else { return }
 
-    
+    // first scan
+    var i = nums.count - 1
+    while (i - 1) >= 0 && nums[i] < nums[i - 1] {
+      i -= 1
+    }
+
+    // second scan
+    var j = nums.count - 1
+    while (j >= i) && nums[i - 1] > nums[j] {
+      j -= 1
+    }
+
+    nums.swapAt(i - 1, j - 1)
+
+    nums = nums[0...i - 1] + nums[i...].reversed()
   }
 }
