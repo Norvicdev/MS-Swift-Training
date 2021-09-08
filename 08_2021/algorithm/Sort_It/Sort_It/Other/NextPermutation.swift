@@ -25,7 +25,7 @@ extension Solution {
       j -= 1
     }
 
-    nums.swapAt(i - 1, j - 1)
+    nums.swapAt(i - 1, j)
 
     nums = nums[0...i - 1] + nums[i...].reversed()
   }
