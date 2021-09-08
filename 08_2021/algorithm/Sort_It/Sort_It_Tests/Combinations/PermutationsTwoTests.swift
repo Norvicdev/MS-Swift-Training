@@ -12,24 +12,25 @@ final class PermutationsTwoTests: XCTestCase {
   let solution = Solution()
 
   func test1() {
-    var nums = [1]
-    self.helper(expected: [1], nums: &nums, message: "1")
+    self.helper(expected: [[1]], nums: [1], message: "1")
   }
 
   func test2() {
-    var nums = [1, 2, 3]
-    self.helper(expected: [1, 3, 2], nums: &nums, message: "1, 2, 3")
+    self.helper(expected: [[1, 1]], nums: [1, 1], message: "1, 1")
   }
 
   func test3() {
-    var nums = [1, 1, 5]
-    self.helper(expected: [1, 5, 1], nums: &nums, message: "1, 1, 5")
+    self.helper(expected: [[1,1,2],
+                           [1,2,1],
+                           [2,1,1]],
+                nums: [1,1,2],
+                message: "1, 1, 2")
   }
 
-  private func helper(expected: [Int],
-                      nums: inout [Int],
+  private func helper(expected: [[Int]],
+                      nums: [Int],
                       message: String) {
-    solution.nextPermutation(&nums)
-    XCTAssertEqual(nums, expected, message)
+    let result = solution.permuteUnique(nums)
+    XCTAssertEqual(result, expected, message)
   }
 }
