@@ -11,10 +11,6 @@ class ViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    let array = [7, 2, 6, 3, 9]
-    print("Original: \(array)")
-    print("Merge sorted: \(mergeSort(array))")
   }
 }
 
