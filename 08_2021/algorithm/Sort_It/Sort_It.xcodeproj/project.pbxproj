@@ -181,6 +181,20 @@
 			path = Recursion;
 			sourceTree = "<group>";
 		};
+		1B5EAAEC26E9922000935EC6 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		1B5EAAED26E9923100935EC6 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		1B8192AD26D0E88B000A2861 /* NSum */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +207,7 @@
 		1B8192B626D0EB8D000A2861 /* Sort_It_Tests */ = {
 			isa = PBXGroup;
 			children = (
+				1B5EAAED26E9923100935EC6 /* Stack */,
 				1BC0F89D26E8439D005C2913 /* Other */,
 				1B11D82826E4D52900150F6B /* Combinations */,
 				1B217F8826D9C57E00DA811A /* Recursion */,
@@ -294,6 +309,7 @@
 		1BCDDB5326C7E958007C744C /* Sort_It */ = {
 			isa = PBXGroup;
 			children = (
+				1B5EAAEC26E9922000935EC6 /* Stack */,
 				1BC0F89E26E843A3005C2913 /* Other */,
 				1BC7C99E26DF0A000052DA29 /* Combination */,
 				1B13310626D7CD3A00ECB588 /* Recursion */,
