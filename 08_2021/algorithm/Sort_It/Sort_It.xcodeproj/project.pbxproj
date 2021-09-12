@@ -29,6 +29,7 @@
 		1B83DA6A26CFF443004839F0 /* SubsetTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B83DA6926CFF443004839F0 /* SubsetTwo.swift */; };
 		1B994A9226ED8BDF00F94A0D /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */; };
 		1B994A9C26ED903E00F94A0D /* ValidParenthesesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B994A9B26ED903E00F94A0D /* ValidParenthesesTests.swift */; };
+		1B994AA226ED925C00F94A0D /* MinStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B994AA126ED925C00F94A0D /* MinStack.swift */; };
 		1BA481AC26E599EF00D82806 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA481AB26E599EF00D82806 /* Permutations.swift */; };
 		1BAF3DB826CBF48900D0F384 /* ThreeLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */; };
 		1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */; };
@@ -96,6 +97,7 @@
 		1B83DA6926CFF443004839F0 /* SubsetTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetTwo.swift; sourceTree = "<group>"; };
 		1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
 		1B994A9B26ED903E00F94A0D /* ValidParenthesesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParenthesesTests.swift; sourceTree = "<group>"; };
+		1B994AA126ED925C00F94A0D /* MinStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStack.swift; sourceTree = "<group>"; };
 		1BA481AB26E599EF00D82806 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLargestNumber.swift; sourceTree = "<group>"; };
 		1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidSubsequence.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */,
+				1B994AA126ED925C00F94A0D /* MinStack.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */,
 				1B83DA6626CFF43A004839F0 /* SubsetOne.swift in Sources */,
 				1B5EAAE926E98BF300935EC6 /* BTLCA.swift in Sources */,
+				1B994AA226ED925C00F94A0D /* MinStack.swift in Sources */,
 				1B507D1A26C94A70009DDBCF /* TwoSum.swift in Sources */,
 				1B217F9426D9D46700DA811A /* ValidBST.swift in Sources */,
 				1BB2C48026D736BA000A0E3C /* QuickSorting.swift in Sources */,
