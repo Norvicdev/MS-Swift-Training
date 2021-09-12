@@ -25,10 +25,29 @@ final class LargestRectangleAreaTests: XCTestCase {
     self.helperV1(expected: 4, heights: [2, 4], message: "[2, 4]")
   }
 
+  func test1V2() {
+    self.helperV2(expected: 2, heights: [2], message: "[2]")
+  }
+
+  func test2V2() {
+    self.helperV2(expected: 10, heights: [2,1,5,6,2,3], message: "[2,1,5,6,2,3]")
+  }
+
+  func test3V2() {
+    self.helperV2(expected: 4, heights: [2, 4], message: "[2, 4]")
+  }
+
   private func helperV1(expected: Int,
                         heights: [Int],
                         message: String) {
     let result = solution.largestRectangleAreaV1(heights)
+    XCTAssertEqual(result, expected, message)
+  }
+
+  private func helperV2(expected: Int,
+                        heights: [Int],
+                        message: String) {
+    let result = solution.largestRectangleAreaV2(heights)
     XCTAssertEqual(result, expected, message)
   }
 }
