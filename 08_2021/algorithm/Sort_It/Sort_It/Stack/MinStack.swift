@@ -19,6 +19,7 @@ public struct MinStack<Element: FixedWidthInteger> {
 
   public init(_ elements: [Element]) {
     storage = elements
+    minStorage = [Element.max]
   }
 
   public mutating func push(_ element: Element) {
