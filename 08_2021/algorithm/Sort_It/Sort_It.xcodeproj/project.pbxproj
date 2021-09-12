@@ -49,6 +49,8 @@
 		1BCDDB5E26C7E959007C744C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5D26C7E959007C744C /* Assets.xcassets */; };
 		1BCDDB6126C7E959007C744C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCDDB5F26C7E959007C744C /* LaunchScreen.storyboard */; };
 		1BCDDB6A26C7E971007C744C /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDDB6926C7E971007C744C /* MergeSort.swift */; };
+		1BCFACA526EDCF6800275234 /* LargestRectangleArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFACA426EDCF6800275234 /* LargestRectangleArea.swift */; };
+		1BCFACA926EDDD9500275234 /* LargestRectangleAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCFACA826EDDD9500275234 /* LargestRectangleAreaTests.swift */; };
 		1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */; };
 		1BD3F92726D7B37400869C6F /* BTMaxPathSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3F92626D7B37400869C6F /* BTMaxPathSum.swift */; };
 		1BD3F92C26D7B54C00869C6F /* BTMaxPathSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3F92B26D7B54C00869C6F /* BTMaxPathSumTests.swift */; };
@@ -120,6 +122,8 @@
 		1BCDDB6026C7E959007C744C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BCDDB6226C7E959007C744C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BCDDB6926C7E971007C744C /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		1BCFACA426EDCF6800275234 /* LargestRectangleArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargestRectangleArea.swift; sourceTree = "<group>"; };
+		1BCFACA826EDDD9500275234 /* LargestRectangleAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargestRectangleAreaTests.swift; sourceTree = "<group>"; };
 		1BD1DF6C26CD411F006753F3 /* CaesarCipherEncryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaesarCipherEncryptor.swift; sourceTree = "<group>"; };
 		1BD3F92626D7B37400869C6F /* BTMaxPathSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxPathSum.swift; sourceTree = "<group>"; };
 		1BD3F92B26D7B54C00869C6F /* BTMaxPathSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTMaxPathSumTests.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			children = (
 				1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */,
 				1B994AA126ED925C00F94A0D /* MinStack.swift */,
+				1BCFACA426EDCF6800275234 /* LargestRectangleArea.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				1B994A9B26ED903E00F94A0D /* ValidParenthesesTests.swift */,
+				1BCFACA826EDDD9500275234 /* LargestRectangleAreaTests.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -476,6 +482,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BCFACA926EDDD9500275234 /* LargestRectangleAreaTests.swift in Sources */,
 				1B43104726DC883D0059281B /* BTCodecTests.swift in Sources */,
 				1B46CD1D26E703EB004E078B /* PermutationsTwoTests.swift in Sources */,
 				1B217F9826D9D76000DA811A /* ValidBSTTests.swift in Sources */,
@@ -518,6 +525,7 @@
 				1BEF9F7726E6318C0000F4CA /* PermutationsTwo.swift in Sources */,
 				1B8192AF26D0E8DA000A2861 /* ThreeSum.swift in Sources */,
 				1BF4667026D8709C00FE8E28 /* GenerateParentheses.swift in Sources */,
+				1BCFACA526EDCF6800275234 /* LargestRectangleArea.swift in Sources */,
 				1B43104326DC75500059281B /* BTCodec.swift in Sources */,
 				1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */,
 				1B83DA6626CFF43A004839F0 /* SubsetOne.swift in Sources */,
