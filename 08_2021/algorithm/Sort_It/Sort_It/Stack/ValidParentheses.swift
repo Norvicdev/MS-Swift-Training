@@ -16,9 +16,10 @@ extension Solution {
     for (_, char) in s.enumerated() {
       if char == "(" || char == "{" || char == "[" {
         stack.push(char)
+        continue
       }
 
-      guard let _last = stack.peek() else { return false }
+      guard let _last = stack.pop() else { return false }
       if char == ")" && _last != "(" {
         return false
       }
