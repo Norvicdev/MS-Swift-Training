@@ -27,6 +27,7 @@
 		1B83DA6226CFF305004839F0 /* Solution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B83DA6126CFF305004839F0 /* Solution.swift */; };
 		1B83DA6626CFF43A004839F0 /* SubsetOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B83DA6526CFF43A004839F0 /* SubsetOne.swift */; };
 		1B83DA6A26CFF443004839F0 /* SubsetTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B83DA6926CFF443004839F0 /* SubsetTwo.swift */; };
+		1B994A9226ED8BDF00F94A0D /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */; };
 		1BA481AC26E599EF00D82806 /* Permutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA481AB26E599EF00D82806 /* Permutations.swift */; };
 		1BAF3DB826CBF48900D0F384 /* ThreeLargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */; };
 		1BB1741D26CA9EB10066177E /* ValidSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */; };
@@ -92,6 +93,7 @@
 		1B83DA6126CFF305004839F0 /* Solution.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solution.swift; sourceTree = "<group>"; };
 		1B83DA6526CFF43A004839F0 /* SubsetOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetOne.swift; sourceTree = "<group>"; };
 		1B83DA6926CFF443004839F0 /* SubsetTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsetTwo.swift; sourceTree = "<group>"; };
+		1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
 		1BA481AB26E599EF00D82806 /* Permutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permutations.swift; sourceTree = "<group>"; };
 		1BAF3DB726CBF48900D0F384 /* ThreeLargestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeLargestNumber.swift; sourceTree = "<group>"; };
 		1BB1741C26CA9EB10066177E /* ValidSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidSubsequence.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		1B5EAAEC26E9922000935EC6 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				1B994A9126ED8BDF00F94A0D /* ValidParentheses.swift */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				1B217F9026D9CA2B00DA811A /* InvertBinaryTree.swift in Sources */,
 				1BC0BE7226D3D505002115C1 /* Stack.swift in Sources */,
 				1BC0BE6726D3CF77002115C1 /* BTPreorderTraversal.swift in Sources */,
+				1B994A9226ED8BDF00F94A0D /* ValidParentheses.swift in Sources */,
 				1B2B7FDF26CE5891009EBF25 /* ShiftLetters.swift in Sources */,
 				1BD6851E26D51FAA007B5B7B /* BTBalancedTree.swift in Sources */,
 				1BD1DF6D26CD411F006753F3 /* CaesarCipherEncryptor.swift in Sources */,
