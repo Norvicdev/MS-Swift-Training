@@ -73,3 +73,23 @@ example(of: "Custom Subscriber") {
   let sub = IntSub()
   pub.subscribe(sub)
 }
+
+
+example(of: "Future") {
+  func futureIncrement(
+    integer: Int,
+    afterDelay delay: TimeInterval) -> Future<Int, Never> {
+
+    Future<Int, Never> { promise in
+      DispatchQueue.global().asyncAfter(deadline: .now() + delay) {
+        promise(.success(integer + 1))
+      }
+    }
+  }
+
+  let future = futureIncrement(integer: 1, afterDelay: 3)
+  future
+    .sink(receiveCompletion: { debugPrint($0) },
+          receiveValue: { debugPrint($0) })
+    .store(in: &subscriptions)
+}
