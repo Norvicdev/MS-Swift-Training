@@ -47,3 +47,29 @@ example(of: "assign to on") {
   _ = pub
     .assign(to: \.str, on: object)
 }
+
+
+example(of: "Custom Subscriber") {
+  let pub = (1...6).publisher
+
+  final class IntSub: Subscriber {
+    typealias Input = Int
+    typealias Failure = Never
+
+    func receive(subscription: Subscription) {
+      subscription.request(.max(3))
+    }
+
+    func receive(_ input: Int) -> Subscribers.Demand {
+      debugPrint("Received value", input)
+      return .none
+    }
+
+    func receive(completion: Subscribers.Completion<Never>) {
+      debugPrint("Received completion", completion)
+    }
+  }
+
+  let sub = IntSub()
+  pub.subscribe(sub)
+}
