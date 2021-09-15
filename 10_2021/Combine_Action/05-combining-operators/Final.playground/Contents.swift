@@ -11,8 +11,8 @@ example(of: "prepend(Output...)") {
 
   // 2
   publisher
-    .prepend(1, 2)
     .prepend(-1, 0)
+    .prepend(1, 2)
     .sink(receiveValue: { print($0) })
     .store(in: &subscriptions)
 }
@@ -115,6 +115,9 @@ example(of: "append(Publisher)") {
 
 // MARK: - Advanced Combining
 
+// Your user taps a button that triggers a network request. Immediately afterward,
+// the user taps the button again, which triggers a second network request.
+// But how do you get rid of the pending request, and only use the latest request? switchToLatest to the rescue!
 example(of: "switchToLatest") {
   // 1
   let publisher1 = PassthroughSubject<Int, Never>()
@@ -154,38 +157,38 @@ example(of: "switchToLatest") {
   publishers.send(completion: .finished)
 }
 
-//example(of: "switchToLatest - Network Request") {
-//  let url = URL(string: "https://source.unsplash.com/random")!
-//
-//  // 1
-//  func getImage() -> AnyPublisher<UIImage?, Never> {
-//      return URLSession.shared
-//                       .dataTaskPublisher(for: url)
-//                       .map { data, _ in UIImage(data: data) }
-//                       .print("image")
-//                       .replaceError(with: nil)
-//                       .eraseToAnyPublisher()
-//  }
-//
-//  // 2
-//  let taps = PassthroughSubject<Void, Never>()
-//
-//  taps
-//    .map { _ in getImage() } // 3
-//    .switchToLatest() // 4
-//    .sink(receiveValue: { _ in })
-//    .store(in: &subscriptions)
-//
-//  // 5
-//  taps.send()
-//
-//  DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//    taps.send()
-//  }
-//  DispatchQueue.main.asyncAfter(deadline: .now() + 3.1) {
-//    taps.send()
-//  }
-//}
+example(of: "switchToLatest - Network Request") {
+  let url = URL(string: "https://source.unsplash.com/random")!
+
+  // 1
+  func getImage() -> AnyPublisher<UIImage?, Never> {
+      return URLSession.shared
+                       .dataTaskPublisher(for: url)
+                       .map { data, _ in UIImage(data: data) }
+                       .print("image")
+                       .replaceError(with: nil)
+                       .eraseToAnyPublisher()
+  }
+
+  // 2
+  let taps = PassthroughSubject<Void, Never>()
+
+  taps
+    .map { _ in getImage() } // 3
+    .switchToLatest() // 4
+    .sink(receiveValue: { _ in })
+    .store(in: &subscriptions)
+
+  // 5
+  taps.send()
+
+  DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+    taps.send()
+  }
+  DispatchQueue.main.asyncAfter(deadline: .now() + 3.1) {
+    taps.send()
+  }
+}
 
 example(of: "merge(with:)") {
   // 1
@@ -214,6 +217,8 @@ example(of: "merge(with:)") {
   publisher2.send(completion: .finished)
 }
 
+// One catch though: The origin publisher and every publisher passed to
+// combineLatest must emit at least one value before combineLatest will emit anything.
 example(of: "combineLatest") {
   // 1
   let publisher1 = PassthroughSubject<Int, Never>()
@@ -242,6 +247,8 @@ example(of: "combineLatest") {
   publisher2.send(completion: .finished)
 }
 
+// Notice how each emitted value "waits" for the other zipped publisher to emit an value.
+// 1 waits for the first emission from the second publisher, so you get (1, "a").
 example(of: "zip") {
   // 1
   let publisher1 = PassthroughSubject<Int, Never>()
