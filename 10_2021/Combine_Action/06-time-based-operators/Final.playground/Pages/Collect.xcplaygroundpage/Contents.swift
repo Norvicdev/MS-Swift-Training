@@ -10,6 +10,9 @@ let collectMaxCount = 2
 let sourcePublisher = PassthroughSubject<Date, Never>()
 
 // 2
+// Every time collect emits a group of values it collected,
+// flatMap breaks it down again to individual values
+// but emitted all at the same time
 let collectedPublisher = sourcePublisher
   .collect(.byTime(DispatchQueue.main, .seconds(collectTimeStride)))
   .flatMap { dates in dates.publisher }
