@@ -9,6 +9,8 @@ let subject = PassthroughSubject<String, Never>()
 let debounced = subject
   .debounce(for: .seconds(1.0), scheduler: DispatchQueue.main)
   // 3
+  //  create a single subscription point to debounce that will show
+  //  the same results at the same time to all subscribers
   .share()
 
 let subjectTimeline = TimelineView(title: "Emitted values")

@@ -4,9 +4,16 @@ import PlaygroundSupport
 
 let throttleDelay = 1.0
 
+// debounce waits for a pause in values it receives, then emits the latest one after the specified interval
+
+// throttle waits for the specified interval, then emits either the first or the latest of the values it received during that interval. It doesn’t care about pauses
+
 // 1
 let subject = PassthroughSubject<String, Never>()
 
+// Your throttled subject will now only emit the first value
+// received from subject during each one-second interval
+// because you set latest to false
 let throttled = subject
   .throttle(for: .seconds(throttleDelay), scheduler: DispatchQueue.main, latest: true)
   .share()
