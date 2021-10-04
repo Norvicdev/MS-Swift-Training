@@ -39,6 +39,18 @@ class EONET {
   static let categoriesEndpoint = "/categories"
   static let eventsEndpoint = "/events"
 
+  // The categories observable you created is a singleton (static var).
+  // All subscribers will get the same one
+  static var categories: Observable<[EOCategory]> = {
+    let request: Observable<[EOCategory]> = EONET.request(endPoint: categoriesEndpoint,
+                                                          contentIdentifier: "categories")
+
+    return request
+      .map { categories in categories.sorted { $0.name < $1.name } }
+      .catchErrorJustReturn([])
+      .share(replay: 1, scope: .forever)
+  }()
+
   static func jsonDecoder(contentIdentifier: String) -> JSONDecoder {
     let decoder = JSONDecoder()
     decoder.userInfo[.contentIdentifier] = contentIdentifier
@@ -87,4 +99,6 @@ class EONET {
       return Observable.empty()
     }
   }
+
+
 }
