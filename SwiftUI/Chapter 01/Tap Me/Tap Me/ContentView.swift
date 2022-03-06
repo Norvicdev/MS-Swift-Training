@@ -25,6 +25,9 @@ struct ContentView: View {
                 Text("You've not yet tapped")
             }
         }
+        // debug trick
+        .border(Color.blue)
+        .frame(width: 200, height: 200)
     }
 }
 
